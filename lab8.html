@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <script>
+          let a = 1 * '4' + +null + +' ' - '5' * 2 + +(7 + 2 + '' + +!!undefined);
+
+          // อธิบายตามลำดับขั้น
+          // 1*'4' > แปลง '4' เป็น string *1 = 4
+          // +null > แปลง null = 0 
+          // +' ' > แปลงช่องว่างเป็น string = 0
+          // '5' * 2 > แปลง 5 เป็น string = 5*2=10
+          // 7+2+' ' > 7+2=9 + string = '9'
+          // !!undefined > boolean '!!' = false =0
+          // รวมแล้วได้ ('90') > แปลง string เป็นตัวเลข 90
+
+          //   a = 4 + 0 + 0 - 10 + 90;
+          //    a = 4 - 10 + 90;
+          //    a = -6 + 90;
+          // a = 84
+
+     </script>
+</body>
+</html>
